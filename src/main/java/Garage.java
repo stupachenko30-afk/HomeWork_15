@@ -77,14 +77,10 @@ public class Garage {
         Car carToReturn = null; //машину еще не нашли
         for(Car car: cars.keySet()) { //перебираем ключи
             if (car.getCode().equalsIgnoreCase(code)) {// возвращаем ноомер машины
-               // carToReturn = car;
                 cars.remove(car);
                 System.out.println("Removed: " + car.getCode());
                    return;
-
-
             }
-
 
         }
 
